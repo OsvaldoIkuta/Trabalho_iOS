@@ -12,6 +12,12 @@
 		031439D52221A7870039510E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031439D32221A7870039510E /* Main.storyboard */; };
 		031439D72221A7940039510E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031439D62221A7940039510E /* Assets.xcassets */; };
 		031439DA2221A7940039510E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031439D82221A7940039510E /* LaunchScreen.storyboard */; };
+		031439E22221A9410039510E /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031439E12221A9410039510E /* CadastrarViewController.swift */; };
+		031439E52221AA080039510E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 031439E32221AA080039510E /* Model.xcdatamodeld */; };
+		031439E72221AB210039510E /* CarroHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031439E62221AB210039510E /* CarroHandle.swift */; };
+		031439EA2221AB450039510E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031439E92221AB450039510E /* CoreData.framework */; };
+		031439EC2221AB570039510E /* CarroProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031439EB2221AB570039510E /* CarroProperty.swift */; };
+		031439EE2221AF840039510E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031439ED2221AF840039510E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		031439D62221A7940039510E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		031439D92221A7940039510E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		031439DB2221A7940039510E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031439E12221A9410039510E /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
+		031439E42221AA080039510E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		031439E62221AB210039510E /* CarroHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroHandle.swift; sourceTree = "<group>"; };
+		031439E92221AB450039510E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		031439EB2221AB570039510E /* CarroProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroProperty.swift; sourceTree = "<group>"; };
+		031439ED2221AF840039510E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031439EA2221AB450039510E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				031439CE2221A7870039510E /* trabalhoIOS */,
 				031439CD2221A7870039510E /* Products */,
+				031439E82221AB450039510E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +74,21 @@
 				031439D62221A7940039510E /* Assets.xcassets */,
 				031439D82221A7940039510E /* LaunchScreen.storyboard */,
 				031439DB2221A7940039510E /* Info.plist */,
+				031439E12221A9410039510E /* CadastrarViewController.swift */,
+				031439E32221AA080039510E /* Model.xcdatamodeld */,
+				031439E62221AB210039510E /* CarroHandle.swift */,
+				031439EB2221AB570039510E /* CarroProperty.swift */,
+				031439ED2221AF840039510E /* TableViewCell.swift */,
 			);
 			path = trabalhoIOS;
+			sourceTree = "<group>";
+		};
+		031439E82221AB450039510E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				031439E92221AB450039510E /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				031439D22221A7870039510E /* ViewController.swift in Sources */,
+				031439EC2221AB570039510E /* CarroProperty.swift in Sources */,
+				031439E22221A9410039510E /* CadastrarViewController.swift in Sources */,
+				031439E72221AB210039510E /* CarroHandle.swift in Sources */,
 				031439D02221A7870039510E /* AppDelegate.swift in Sources */,
+				031439EE2221AF840039510E /* TableViewCell.swift in Sources */,
+				031439E52221AA080039510E /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJGR6U7U6M;
 				INFOPLIST_FILE = trabalhoIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJGR6U7U6M;
 				INFOPLIST_FILE = trabalhoIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		031439E32221AA080039510E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				031439E42221AA080039510E /* Model.xcdatamodel */,
+			);
+			currentVersion = 031439E42221AA080039510E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 031439C42221A7870039510E /* Project object */;
 }
